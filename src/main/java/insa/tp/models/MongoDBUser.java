@@ -1,28 +1,47 @@
 package insa.tp.models;
 
 
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.mongodb.core.mapping.MongoId;
 
 @Document(collection = "users")
-public class User {
+public class MongoDBUser {
 
-    private @Id Long id;
+
+    @Indexed(unique = true)
+    @Field(value="_id")
+    @MongoId
+    private ObjectId id;
+    @Field(value="login")
     private String login;
+    @Field(value="password")
     private String password;
+    @Field(value="firstname")
     private String firstname;
+    @Field(value="lastname")
     private String lastname;
+    @Field(value="picture")
     private String picture;
+    @Field(value="description")
     private String description;
 
-    public User(Long id, String login, String password) {
-        this.id = id;
-        this.login = login;
-        this.password = password;
+    public MongoDBUser(){
+
     }
 
-    public User(Long id, String login, String password, String firstname, String lastname, String picture, String description) {
-        this.id = id;
+    public MongoDBUser(String login, String password) {
+        this.login = login;
+        this.password = password;
+        this.firstname = "";
+        this.lastname = "";
+        this.picture = "";
+        this.description = "";
+    }
+
+    public MongoDBUser(String login, String password, String firstname, String lastname, String picture, String description) {
         this.login = login;
         this.password = password;
         this.firstname = firstname;
@@ -31,7 +50,7 @@ public class User {
         this.description = description;
     }
 
-    public Long getId() {
+    public ObjectId getId() {
         return id;
     }
 
@@ -59,7 +78,7 @@ public class User {
         return description;
     }
 
-    public void setId(Long id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 

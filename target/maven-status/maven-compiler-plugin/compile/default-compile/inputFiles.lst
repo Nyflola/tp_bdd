@@ -1,1 +1,8 @@
-/home/kali/Semestre_8/BDD/tp_bdd/src/main/java/insa/tp/TpApplication.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/models/Neo4JUser.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/JerseyConfig.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/models/MongoDBUser.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/TpApplication.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/controllers/RelationController.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/controllers/UserController.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/MongoDBUserRepository.java
+/home/kali/Shared_folders/Shared_folder/INSA/Semestre_8/Base de données distribuée/tp_bdd/src/main/java/insa/tp/Neo4JUserRepository.java
